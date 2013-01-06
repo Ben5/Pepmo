@@ -1,9 +1,10 @@
 <?php
+namespace Pepmo;
 
 class SiteConfig
 {
-    const SITE_ROOT   = "/opt/site/site";
-    const REVERB_ROOT = "/opt/site/reverb";
+    const SITE_ROOT   = "/opt/git/Pepmo/site";
+    const REVERB_ROOT = "/opt/git/Pepmo/reverb";
     const DEFAULT_HEAD_TITLE = "Ben Smith | Personal Projects";
 
     const DB_HOST = 'localhost';

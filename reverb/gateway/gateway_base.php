@@ -1,13 +1,16 @@
 <?php
 
-include "/opt/site/site/config/site.php";
+use Pepmo\SiteConfig;
+
+include "/opt/git/Pepmo/site/config/site.php";
 include SiteConfig::REVERB_ROOT."/system/error.php";
 
 set_error_handler("Error::ErrorHandler" );
 
 class GatewayBase 
 {
-    private $siteRootArray = array();
+    private $siteRootArray = array('terraingen' => '/opt/git/TerrainGen/site',
+                                   'reverb'     => '/opt/git/Reverb/site');
 
     protected $siteRoot;
     protected $componentName;
@@ -34,6 +37,13 @@ class GatewayBase
                     }
 
                     $this->siteRoot = $this->siteRootArray[$val];
+
+                    if( !is_readable($this->siteRoot."/config/site.php") )
+                    {
+                        trigger_error("cannot find site config file:".$this->siteRoot."/config/site.php");
+                    }
+
+                    include $this->siteRoot."/config/site.php";
                 }
                 break;
 

@@ -1,5 +1,7 @@
 <?php
 
+use Pepmo\SiteConfig;
+
 class ComponentBase
 {
     private $headVars   = array();

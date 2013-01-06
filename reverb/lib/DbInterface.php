@@ -1,5 +1,7 @@
 <?php
 
+use Pepmo\SiteConfig;
+
 class DbInterface
 {
     private static $connection;
