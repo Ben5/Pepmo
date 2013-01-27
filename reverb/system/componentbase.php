@@ -29,7 +29,7 @@ class ComponentBase
         {
             if (isset($this->headVars[$name]))
             {
-                trigger_error("duplicate outout variable: $name");
+                trigger_error("duplicate output variable: $name");
             }
 
             $this->headVars[$name] = $value;
@@ -38,7 +38,7 @@ class ComponentBase
         {
             if (isset($this->outputVars[$name]))
             {
-                trigger_error("duplicate outout variable: $name");
+                trigger_error("duplicate output variable: $name");
             }
 
             $this->outputVars[$name] = $value;

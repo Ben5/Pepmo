@@ -2,7 +2,7 @@
 
 use Pepmo\SiteConfig;
 
-require_once(SiteConfig::REVERB_ROOT."/system/componentbase.php");
+require_once SiteConfig::REVERB_ROOT."/system/componentbase.php";
 
 class Home extends ComponentBase
 {
@@ -10,6 +10,5 @@ class Home extends ComponentBase
     Index()
     {
         $this->ExposeVariable('title', SiteConfig::DEFAULT_HEAD_TITLE, true);
-        $this->ExposeVariable('msg', 'Hello World');
     }
 }
