@@ -14,12 +14,15 @@ class Home extends ComponentBase
         $projects = array(
             array('name'   => 'TerrainGen',
                   'url'    => '/html/terraingen/terrain/index',
+                  'details'=> 'A little PHP app to generate and draw a 2D map consisting of different terrain types (ocean, beach, grass, etc).',
                   'github' => 'https://github.com/Ben5/TerrainGen'),
             array('name'   => 'Reverb Framework',
                   'url'    => '/html/reverb/hello/index',
+                  'details'=> 'Extremely lightweight MVC pattern \'framework\' for PHP. This MVC pattern implementation (I hesitate to call it a framework, as it is so lightweight) has only been tested on Apache, but it should work without modification on a server running NGinX as well. I have provided the Apache config required to get it working below, perhaps the NGinX equivalent will follow shortly :)',
                   'github' => 'https://github.com/Ben5/Reverb'),
             array('name'   => 'Sniffer',
                   'url'    => '/html/sniffer/index',
+                  'details'=> 'A custom PHP static analysis script written in Python.',
                   'github' => 'https://github.com/Ben5/Sniffer'),
             );
 

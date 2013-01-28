@@ -7,6 +7,10 @@
                 <?php echo $project['name']; ?>
             </div>
 
+            <div class='details'>
+                <?php echo $project['details']; ?>
+            </div>
+
             <div class='github'>
                 <a href='<?php echo $project['github']; ?>'>View on GitHub</a>
             </div>

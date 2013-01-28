@@ -9,6 +9,12 @@ div.projectWrapper {
     border-radius: 15px;
 }
 
+div.projectWrapper div.details {
+    background: #DDDDDD;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 div.projectWrapper div.title {
     color: #0000CC;
     font-size: 2em;
@@ -16,8 +22,12 @@ div.projectWrapper div.title {
 
 div.projectWrapper div.github {
     float: right;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
 div.projectWrapper div.view {
     float: right;
+    margin-right: 5px;
+    margin-top: 5px;
 }
