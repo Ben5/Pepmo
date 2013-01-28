@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+}
+
+div.projectWrapper {
+    background: #BBBBBB;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+div.projectWrapper div.title {
+    color: #0000CC;
+    font-size: 2em;
+}
+
+div.projectWrapper div.github {
+    float: right;
+}
+
+div.projectWrapper div.view {
+    float: right;
+}
