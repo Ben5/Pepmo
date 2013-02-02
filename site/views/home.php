@@ -12,7 +12,7 @@
             </div>
 
             <div class='github'>
-                <a href='<?php echo $project['github']; ?>'>View on GitHub</a>
+                <a href='<?php echo $project['github']; ?>' target="_blank">View on GitHub</a>
             </div>
 
             <div class='view'>
