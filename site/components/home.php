@@ -18,7 +18,7 @@ class Home extends ComponentBase
                   'github' => 'https://github.com/Ben5/TerrainGen'),
             array('name'   => 'Reverb Framework',
                   'url'    => '/html/reverb/hello/index',
-                  'details'=> 'Extremely lightweight MVC pattern \'framework\' for PHP. This MVC pattern implementation (I hesitate to call it a framework, as it is so lightweight) has only been tested on Apache, but it should work without modification on a server running NGinX as well. I have provided the Apache config required to get it working below, perhaps the NGinX equivalent will follow shortly :)',
+                  'details'=> 'Extremely lightweight MVC pattern \'framework\' for PHP. This MVC pattern implementation (I hesitate to call it a framework, as it is so lightweight) has only been tested on Apache, but it should work without modification on a server running NGinX as well. I have provided the Apache config required to get it working on the GitHub page for this project, perhaps the NGinX equivalent will follow shortly :)',
                   'github' => 'https://github.com/Ben5/Reverb'),
             array('name'   => 'Sniffer',
                   'url'    => '/html/sniffer/index',
