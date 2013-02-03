@@ -1,5 +1,14 @@
 body {
+    color: #0000CC;
     font-family: sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+div.headerText {
+    color: #333333;
 }
 
 div.projectWrapper {
@@ -7,17 +16,48 @@ div.projectWrapper {
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px #666666;
 }
 
 div.projectWrapper div.details {
     background: #DDDDDD;
     padding: 5px;
     border-radius: 10px;
+    display: none;
+    color: #333333;
+}
+
+div.projectWrapper div.expander {
+    float:left;
+    background: #DDDDDD;
+    width: 30px;
+    height:30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+    vertical-align: center;
+    margin-right: 10px;
+    margin-top: 0px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #666666;
+    color: #333333;
 }
 
 div.projectWrapper div.title {
-    color: #0000CC;
     font-size: 2em;
+    float: left;
+    height: 40px;
+}
+
+div.projectWrapper div.details div.detailsThumbnail img{
+    max-height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+div.projectWrapper div.details div.detailsText{
+    float: left;
+    margin: 10px;
 }
 
 div.projectWrapper div.github {

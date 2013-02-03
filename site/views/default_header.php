@@ -28,3 +28,5 @@
 <div class='header'>
     <span class='name'>bensmith</span><span class='online'>-online</span>
 </div>
+
+<hr />
