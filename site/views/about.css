@@ -19,6 +19,10 @@ div.pageContent {
     position: absolute;
 }
 
+div.pageContent ul {
+    color: #333333;
+}
+
 div.projectWrapper {
     background: #BBBBBB;
     margin: 10px;
