@@ -72,7 +72,6 @@ div.projectWrapper div.details div.detailsThumbnail img{
 div.projectWrapper div.details div.detailsText{
     left: 240px;
     margin: 10px;
-    position: absolute;
 }
 
 div.projectWrapper div.github {
