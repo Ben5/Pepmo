@@ -15,7 +15,14 @@ class Home extends ComponentBase
             array('name'   => 'TerrainGen',
                   'url'    => '/html/terraingen/terrain/index',
                   'thumb'  => 'TerrainGenThumb.PNG',
-                  'details'=> 'A little PHP app to generate and draw a 2D map consisting of different terrain types (ocean, beach, grass, etc).',
+                  'details'=> 'A little PHP app to generate and draw a 2D map consisting of different terrain types.
+                               <br>
+                               <br>
+                               There are currently three types of terrain - Ocean, Beach and Grassland. 
+                               <br>
+                               There is a strict set of rules to define what types are allowed to be next to each other, for instance an ocean tile cannot be directly next to a grassland tile.
+                               <br>
+                               I have included the ability to change the dimensions of the generated map through a simple form, and I hope to add the ability to change the ruleset governing terrain relationships and maybe even the set of different terrain types.',
                   'github' => 'https://github.com/Ben5/TerrainGen'),
             array('name'   => 'Reverb Framework',
                   'url'    => '/html/reverb/hello/index',

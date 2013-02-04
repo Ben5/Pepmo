@@ -33,6 +33,7 @@ div.projectWrapper div.details {
     border-radius: 10px;
     display: none;
     color: #333333;
+    position: relative;
 }
 
 div.projectWrapper div.expander {
@@ -57,15 +58,21 @@ div.projectWrapper div.title {
     height: 40px;
 }
 
+div.projectWrapper div.details div.detailsThumbnail {
+    float: left;
+    width: 225px;
+}
+
 div.projectWrapper div.details div.detailsThumbnail img{
     max-height: 200px;
-    float: left;
+    max-width: 200px;
     margin: 10px;
 }
 
 div.projectWrapper div.details div.detailsText{
-    float: left;
+    left: 240px;
     margin: 10px;
+    position: absolute;
 }
 
 div.projectWrapper div.github {

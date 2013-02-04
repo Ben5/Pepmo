@@ -23,7 +23,8 @@
 
                     <div class='details' id='<?php echo str_replace(" ", "_", $project['name']);?>'>
                         <?php
-                            if ($project['thumb'] !== '')
+                            $hasThumb = ($project['thumb'] !== '');
+                            if ($hasThumb)
                             {
                         ?>
                                 <div class='detailsThumbnail'>
@@ -35,7 +36,7 @@
                             }
                         ?>
 
-                        <div class='detailsText'>
+                        <div class='<?php echo $hasThumb ? 'detailsText' : 'detailsTextWide'; ?>'>
                             <?php echo $project['details']; ?>
                         </div>
 
