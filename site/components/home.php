@@ -35,7 +35,7 @@ class Home extends ComponentBase
                   'details'=> 'A custom PHP static analysis script written in Python.',
                   'github' => 'https://github.com/Ben5/Sniffer'),
             array('name'   => 'Symblog',
-                  'url'    => '/symblog/app_dev.php',
+                  'url'    => '/symblog/app.php',
                   'thumb'  => '',
                   'details'=> 'Creating a blog with Symfony2, following tutorial at <a href="http://tutorial.symblog.co.uk" target="_blank">tutorial.symblog.co.uk</a>.',
                   'github' => 'https://github.com/Ben5/Symblog'),
