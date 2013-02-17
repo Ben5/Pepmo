@@ -10,7 +10,8 @@ set_error_handler("Error::ErrorHandler" );
 class GatewayBase 
 {
     private $siteRootArray = array('terraingen' => '/opt/git/TerrainGen/site',
-                                   'reverb'     => '/opt/git/Reverb/site');
+                                   'reverb'     => '/opt/git/Reverb/site',
+                                   'dashboard'  => '/opt/git/Dashboard/site');
 
     protected $siteRoot;
     protected $componentName;
