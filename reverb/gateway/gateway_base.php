@@ -9,11 +9,8 @@ set_error_handler("Error::ErrorHandler" );
 
 class GatewayBase 
 {
-    private $siteRootArray = array('terraingen' => '/opt/git/TerrainGen/site',
-                                   'reverb'     => '/opt/git/Reverb/site',
-                                   'dashboard'  => '/opt/git/Dashboard/site');
-
     protected $siteRoot;
+    protected $projectName;
     protected $componentName;
     protected $componentInstance;
 
@@ -21,7 +18,7 @@ class GatewayBase
     {
         $this->componentName = '';
         $this->siteRoot = SiteConfig::SITE_ROOT;
-        $projectName = '';
+        $this->projectName = '';
 
         $action = 'Index';
         $params = array();
@@ -32,19 +29,7 @@ class GatewayBase
             {
                 case "_project":
                 {
-                    if (!isset($this->siteRootArray[$val]))
-                    {
-                        trigger_error('unknown project name: '.$val);
-                    }
-
-                    $this->siteRoot = $this->siteRootArray[$val];
-
-                    if( !is_readable($this->siteRoot."/config/site.php") )
-                    {
-                        trigger_error("cannot find site config file:".$this->siteRoot."/config/site.php");
-                    }
-
-                    include $this->siteRoot."/config/site.php";
+                    $this->projectName = $val;
                 }
                 break;
 
@@ -75,7 +60,7 @@ class GatewayBase
 
         if( !is_readable($this->siteRoot."/components/$this->componentName.php") )
         {
-            trigger_error("cannot find specified component: $this->componentName");
+            trigger_error('cannot find specified component: '.$this->componentName.' with site root: '.$this->siteRoot);
         }
 
         include $this->siteRoot."/components/$this->componentName.php";

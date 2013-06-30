@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+div.pageContent {
+    margin-left: 150px;
+    width: auto;
+    padding: 10px;
+    padding-top: 0px;
+    position: absolute;
+}
+
+h3 {
+    color: #0000CC;
+}

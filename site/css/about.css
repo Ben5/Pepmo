@@ -19,6 +19,10 @@ div.pageContent {
     position: absolute;
 }
 
+div.pageContent ul {
+    color: #333333;
+}
+
 div.projectWrapper {
     background: #BBBBBB;
     margin: 10px;
@@ -33,7 +37,6 @@ div.projectWrapper div.details {
     border-radius: 10px;
     display: none;
     color: #333333;
-    position: relative;
 }
 
 div.projectWrapper div.expander {
@@ -47,12 +50,9 @@ div.projectWrapper div.expander {
     vertical-align: center;
     margin-right: 10px;
     margin-top: 0px;
+    cursor: pointer;
     box-shadow: 2px 2px 5px #666666;
     color: #333333;
-}
-
-div.projectWrapper .expanderClickable {
-    cursor: pointer;
 }
 
 div.projectWrapper div.title {
@@ -61,19 +61,14 @@ div.projectWrapper div.title {
     height: 40px;
 }
 
-div.projectWrapper div.details div.detailsThumbnail {
-    float: left;
-    width: 225px;
-}
-
 div.projectWrapper div.details div.detailsThumbnail img{
     max-height: 200px;
-    max-width: 200px;
+    float: left;
     margin: 10px;
 }
 
 div.projectWrapper div.details div.detailsText{
-    left: 240px;
+    float: left;
     margin: 10px;
 }
 

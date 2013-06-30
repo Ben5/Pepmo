@@ -20,18 +20,22 @@ div.pageContent {
 }
 
 div.projectWrapper {
-    background: #BBBBBB;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px #666666;
+}
+
+#accordion h3 {
+    cursor: pointer;
+    border: 1px #226 solid;
+    -webkit-margin-before: 2px;
+    -webkit-margin-after: 0px;
+    background: #aaddFF;
+    padding: 5px;
+    -webkit-border-radius: 3px;
 }
 
 div.projectWrapper div.details {
     background: #DDDDDD;
     padding: 5px;
     border-radius: 10px;
-    display: none;
     color: #333333;
     position: relative;
 }

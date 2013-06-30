@@ -4,7 +4,7 @@ use Pepmo\SiteConfig;
 
 require_once SiteConfig::REVERB_ROOT."/system/componentbase.php";
 
-class Home extends ComponentBase
+class Home_Test extends ComponentBase
 {
     protected function
     Index()
@@ -13,7 +13,7 @@ class Home extends ComponentBase
 
         $projects = array(
             array('name'   => 'TerrainGen',
-                  'url'    => '/terraingen/html/terrain/index',
+                  'url'    => '/html/terraingen/terrain/index',
                   'thumb'  => 'TerrainGenThumb.PNG',
                   'details'=> 'A little PHP app to generate and draw a 2D map consisting of different terrain types.
                                <br>
@@ -25,7 +25,7 @@ class Home extends ComponentBase
                                I have included the ability to change the dimensions of the generated map through a simple form, and I hope to add the ability to change the ruleset governing terrain relationships and maybe even the set of different terrain types.',
                   'github' => 'https://github.com/Ben5/TerrainGen'),
             array('name'   => 'Reverb Framework',
-                  'url'    => '/Reverb/html/hello/index',
+                  'url'    => '/html/reverb/hello/index',
                   'thumb'  => '',
                   'details'=> 'Extremely lightweight MVC pattern \'framework\' for PHP. This MVC pattern implementation (I hesitate to call it a framework, as it is so lightweight) has only been tested on Apache, but it should work without modification on a server running NGinX as well. I have provided the Apache config required to get it working on the GitHub page for this project, perhaps the NGinX equivalent will follow shortly :)',
                   'github' => 'https://github.com/Ben5/Reverb'),

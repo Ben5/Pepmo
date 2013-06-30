@@ -6,20 +6,14 @@
         </div>
 
 
+        <div id="accordion">
         <?php
             foreach($projects as $project)
             {
         ?>
+                <h3><?php echo $project['name']; ?></h3>
+
                 <div class='projectWrapper'>
-                    <div class='expander expanderClickable' projectName='<?php echo str_replace(" ", "_", $project['name']);?>'>
-                        +
-                    </div>
-
-                    <div class='title expanderClickable'>
-                        <?php echo $project['name']; ?>
-                    </div>
-
-                    <div class='clear'></div>
 
                     <div class='details' id='<?php echo str_replace(" ", "_", $project['name']);?>'>
                         <?php
@@ -53,10 +47,10 @@
                         </a>
                     </div>
 
-                    <div class='clear'></div>
                 </div>
         <?php
             }
         ?>
+        </div>
 
     </div>
