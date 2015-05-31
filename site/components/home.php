@@ -12,18 +12,25 @@ class Home extends ComponentBase
         $this->ExposeVariable('title', SiteConfig::DEFAULT_HEAD_TITLE, true);
 
         $projects = array(
+            array('name'   => 'Picroll',
+                'url'    => '/picroll/html/login/index',
+                'thumb'  => '',
+                'details'=> 'Photo sharing and manipulation site
+                            <br>
+                            ** Current Project, ongoing development! **',
+                'github' => 'https://github.com/Ben5/Picroll'),
             array('name'   => 'TerrainGen',
-                  'url'    => '/terraingen/html/terrain/index',
-                  'thumb'  => 'TerrainGenThumb.PNG',
-                  'details'=> 'A little PHP app to generate and draw a 2D map consisting of different terrain types.
+                'url'    => '/terraingen/html/terrain/index',
+                'thumb'  => 'TerrainGenThumb.PNG',
+                'details'=> 'A little PHP app to generate and draw a 2D map consisting of different terrain types.
                                <br>
                                <br>
-                               There are currently three types of terrain - Ocean, Beach and Grassland. 
+                               There are currently three types of terrain - Ocean, Beach and Grassland.
                                <br>
                                There is a strict set of rules to define what types are allowed to be next to each other, for instance an ocean tile cannot be directly next to a grassland tile.
                                <br>
                                I have included the ability to change the dimensions of the generated map through a simple form, and I hope to add the ability to change the ruleset governing terrain relationships and maybe even the set of different terrain types.',
-                  'github' => 'https://github.com/Ben5/TerrainGen'),
+                'github' => 'https://github.com/Ben5/TerrainGen'),
             array('name'   => 'Reverb Framework',
                   'url'    => '/Reverb/html/hello/index',
                   'thumb'  => '',
